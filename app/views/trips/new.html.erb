@@ -1,5 +1,5 @@
+<%= link_to "See all the trips you created", member_trips_path(current_member.id)%><br>
 <h1 style="color: white;"></h1>Create a trip form
-<%= link_to "Sign Out", destroy_member_session_path, :method => :delete %>
 
 <%= form_for [current_member, @trip] do |f| %> 
 	

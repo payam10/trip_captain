@@ -1,0 +1,4 @@
+<h1>Welcome <%=current_member.email%>! Here are your current trips </h1>
+<% @trips.each do |trip| %>
+<%= trip.where %>
+<% end %>
