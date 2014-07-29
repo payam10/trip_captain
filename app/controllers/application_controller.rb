@@ -5,9 +5,8 @@ class ApplicationController < ActionController::Base
 
   
   def after_sign_in_path_for(resource)
-  	puts "$" * 100
-  	puts "$" * 100
-    #redirect to new trip page after log in
+  	# puts "$" * 100
+    # redirect to new trip page after log in
     new_member_trip_path(current_member)
   end
 end
