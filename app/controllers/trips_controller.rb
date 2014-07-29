@@ -1,7 +1,6 @@
 class TripsController < ApplicationController
 	def index
 		@trips = current_member.trips
-		# @trips = Trip.all 
 	end
 
 	def new
