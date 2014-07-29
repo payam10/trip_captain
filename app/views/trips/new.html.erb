@@ -1,0 +1,19 @@
+<h1 style="color: white;"></h1>Create a trip form
+<%= link_to "Sign Out", destroy_member_session_path, :method => :delete %>
+
+<%= current_member.email %>
+<%= @trip %>
+
+<%= form_for [current_member, @trip] do |f| %> 
+	
+	<%= f.label :where, "Where?" %><br/>
+	<%= f.text_field :where, placeholder: "Hawaii" %><br>
+	
+	<%= f.label :when, "When?" %><br/>
+	<%= f.text_field :when, placeholder: "#" %><br>
+
+	<%= f.label :price, "Price per person? (Approximately)" %><br/>
+	<%= f.text_field :price, placeholder: "$550" %><br>
+
+	<%= f.submit "Create Trip Idea"%>
+<% end %>

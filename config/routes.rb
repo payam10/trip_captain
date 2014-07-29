@@ -2,7 +2,7 @@ Rails.application.routes.draw do
   devise_for :members, :controllers => { :registrations => "registrations" }
 
   resources :members do
-    resources :trip
+    resources :trips
   end
 
   root to: 'home#index'
