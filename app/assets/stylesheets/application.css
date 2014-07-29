@@ -1,12 +1,18 @@
 body {
-	background-image: url(http://p1.pichost.me/i/41/1647781.jpg);
+	/*background-image: url(http://p1.pichost.me/i/41/1647781.jpg);*/
 	background-position: center top;
 	background-size: 100% auto;
 	background-repeat: no-repeat;
 }
 
-.form, a {
-	color: white;
+ul.hmenu {
+  list-style: none; 
+  margin: 0 0 2em;
+  padding: 0;
+}
+
+ul.hmenu li {
+  display: inline;  
 }
 /*
  * This is a manifest file that'll be compiled into application.css, which will include all the files
