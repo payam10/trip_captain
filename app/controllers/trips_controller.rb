@@ -9,6 +9,7 @@ class TripsController < ApplicationController
 	
 	def create
 		@trip = Trip.create(trip_params)
+		current_member.trips << @trip 
 
 		redirect_to member_trip_path(current_member.id, @trip.id) 
 	end
